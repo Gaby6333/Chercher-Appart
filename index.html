@@ -60,6 +60,7 @@ header .sous-titre { color: var(--text-muted); font-size: 0.78em; margin-top: 0.
   text-decoration: none; color: inherit;
 }
 .carte.deal { outline: 2px solid var(--deal); }
+.carte[hidden] { display: none; }
 .zone-image { position: relative; aspect-ratio: 4 / 3; background: var(--border); overflow: hidden; }
 .zone-image img { width: 100%; height: 100%; object-fit: cover; display: block; }
 .ruban-deal {
@@ -95,7 +96,7 @@ footer { text-align: center; color: var(--text-muted); font-size: 0.75em; paddin
 <body>
 <header>
   <h1>Logement Watcher</h1>
-  <div class="sous-titre">Mise a jour: 2026-09-15 15:15 &middot; 93 annonces</div>
+  <div class="sous-titre">Mise a jour: 2026-09-21 08:17 &middot; 93 annonces</div>
   <div class="barre-outils">
     <input type="text" id="recherche" placeholder="Chercher un mot-cle...">
     <button id="toggle-filtres" type="button">Filtres</button>
@@ -105,7 +106,7 @@ footer { text-align: center; color: var(--text-muted); font-size: 0.75em; paddin
   <div id="panneau-filtres">
     <div>
       <label>Ville
-        <select id="filtre-ville"><option value="">Toutes</option><option value="sherbrooke-qc">sherbrooke-qc</option></select>
+        <select id="filtre-ville"><option value="">Toutes</option><option value="sherbrooke-qc">Sherbrooke</option></select>
       </label>
     </div>
     <div>
@@ -115,7 +116,7 @@ footer { text-align: center; color: var(--text-muted); font-size: 0.75em; paddin
     </div>
     <div>
       <label>Site
-        <select id="filtre-site"><option value="">Tous</option><option value="appartogo">appartogo</option><option value="duproprio">duproprio</option><option value="kijiji">kijiji</option><option value="lespac">lespac</option><option value="logisquebec">logisquebec</option></select>
+        <select id="filtre-site"><option value="">Tous</option><option value="appartogo">Appartogo</option><option value="duproprio">Duproprio</option><option value="kijiji">Kijiji</option><option value="lespac">Lespac</option><option value="logisquebec">Logisquebec</option></select>
       </label>
     </div>
     <div>
@@ -153,8 +154,8 @@ footer { text-align: center; color: var(--text-muted); font-size: 0.75em; paddin
         <div class="titre-carte">NEUF 4.5 &amp; 3.5 - Sherbrooke</div>
         <div class="meta-carte">
           <span class="type-piece"></span>
-          <span class="type-piece">sherbrooke-qc</span>
-          <span class="badge badge-appartogo">appartogo</span>
+          <span class="type-piece">Sherbrooke</span>
+          <span class="badge badge-appartogo">Appartogo</span>
         </div>
         
       </div>
@@ -174,8 +175,8 @@ footer { text-align: center; color: var(--text-muted); font-size: 0.75em; paddin
         <div class="titre-carte">BEAU 4 ½|CONSTRUCTION RÉCENTE</div>
         <div class="meta-carte">
           <span class="type-piece">4 1/2</span>
-          <span class="type-piece">sherbrooke-qc</span>
-          <span class="badge badge-appartogo">appartogo</span>
+          <span class="type-piece">Sherbrooke</span>
+          <span class="badge badge-appartogo">Appartogo</span>
         </div>
         
       </div>
@@ -195,8 +196,8 @@ footer { text-align: center; color: var(--text-muted); font-size: 0.75em; paddin
         <div class="titre-carte">GRAND 4½|CARRE-BELVÉDÈRE |OCTOBRE</div>
         <div class="meta-carte">
           <span class="type-piece">4 1/2</span>
-          <span class="type-piece">sherbrooke-qc</span>
-          <span class="badge badge-appartogo">appartogo</span>
+          <span class="type-piece">Sherbrooke</span>
+          <span class="badge badge-appartogo">Appartogo</span>
         </div>
         
       </div>
@@ -216,8 +217,8 @@ footer { text-align: center; color: var(--text-muted); font-size: 0.75em; paddin
         <div class="titre-carte">MAGNIFIQUE 5 1/2 | BALCON |</div>
         <div class="meta-carte">
           <span class="type-piece">5 1/2</span>
-          <span class="type-piece">sherbrooke-qc</span>
-          <span class="badge badge-appartogo">appartogo</span>
+          <span class="type-piece">Sherbrooke</span>
+          <span class="badge badge-appartogo">Appartogo</span>
         </div>
         
       </div>
@@ -237,8 +238,8 @@ footer { text-align: center; color: var(--text-muted); font-size: 0.75em; paddin
         <div class="titre-carte">Logement 4-1/2 Haute Gammes</div>
         <div class="meta-carte">
           <span class="type-piece">4 1/2</span>
-          <span class="type-piece">sherbrooke-qc</span>
-          <span class="badge badge-appartogo">appartogo</span>
+          <span class="type-piece">Sherbrooke</span>
+          <span class="badge badge-appartogo">Appartogo</span>
         </div>
         
       </div>
@@ -258,8 +259,8 @@ footer { text-align: center; color: var(--text-muted); font-size: 0.75em; paddin
         <div class="titre-carte">Bel Appartement 4½, Immeuble Bien Situé</div>
         <div class="meta-carte">
           <span class="type-piece">4 1/2</span>
-          <span class="type-piece">sherbrooke-qc</span>
-          <span class="badge badge-appartogo">appartogo</span>
+          <span class="type-piece">Sherbrooke</span>
+          <span class="badge badge-appartogo">Appartogo</span>
         </div>
         
       </div>
@@ -279,8 +280,8 @@ footer { text-align: center; color: var(--text-muted); font-size: 0.75em; paddin
         <div class="titre-carte">Apartment · 116 m² · Sherbrooke</div>
         <div class="meta-carte">
           <span class="type-piece"></span>
-          <span class="type-piece">sherbrooke-qc</span>
-          <span class="badge badge-appartogo">appartogo</span>
+          <span class="type-piece">Sherbrooke</span>
+          <span class="badge badge-appartogo">Appartogo</span>
         </div>
         
       </div>
@@ -300,8 +301,8 @@ footer { text-align: center; color: var(--text-muted); font-size: 0.75em; paddin
         <div class="titre-carte">4 1/2 Central</div>
         <div class="meta-carte">
           <span class="type-piece">4 1/2</span>
-          <span class="type-piece">sherbrooke-qc</span>
-          <span class="badge badge-appartogo">appartogo</span>
+          <span class="type-piece">Sherbrooke</span>
+          <span class="badge badge-appartogo">Appartogo</span>
         </div>
         
       </div>
@@ -321,8 +322,8 @@ footer { text-align: center; color: var(--text-muted); font-size: 0.75em; paddin
         <div class="titre-carte">Immeuble - 5054 Bertrand-Fabi Grand 4 1/2 Moderne - Secteur Rock Forest</div>
         <div class="meta-carte">
           <span class="type-piece">4 1/2</span>
-          <span class="type-piece">sherbrooke-qc</span>
-          <span class="badge badge-appartogo">appartogo</span>
+          <span class="type-piece">Sherbrooke</span>
+          <span class="badge badge-appartogo">Appartogo</span>
         </div>
         
       </div>
@@ -342,8 +343,8 @@ footer { text-align: center; color: var(--text-muted); font-size: 0.75em; paddin
         <div class="titre-carte">4 1/2 a louer</div>
         <div class="meta-carte">
           <span class="type-piece">4 1/2</span>
-          <span class="type-piece">sherbrooke-qc</span>
-          <span class="badge badge-appartogo">appartogo</span>
+          <span class="type-piece">Sherbrooke</span>
+          <span class="badge badge-appartogo">Appartogo</span>
         </div>
         
       </div>
@@ -363,8 +364,8 @@ footer { text-align: center; color: var(--text-muted); font-size: 0.75em; paddin
         <div class="titre-carte">51/2 Haut De Gamme</div>
         <div class="meta-carte">
           <span class="type-piece">5 1/2</span>
-          <span class="type-piece">sherbrooke-qc</span>
-          <span class="badge badge-appartogo">appartogo</span>
+          <span class="type-piece">Sherbrooke</span>
+          <span class="badge badge-appartogo">Appartogo</span>
         </div>
         
       </div>
@@ -384,8 +385,8 @@ footer { text-align: center; color: var(--text-muted); font-size: 0.75em; paddin
         <div class="titre-carte">BEAU 4 1/2|CONSTRUCTION NEUVE|</div>
         <div class="meta-carte">
           <span class="type-piece">4 1/2</span>
-          <span class="type-piece">sherbrooke-qc</span>
-          <span class="badge badge-logisquebec">logisquebec</span>
+          <span class="type-piece">Sherbrooke</span>
+          <span class="badge badge-logisquebec">Logisquebec</span>
         </div>
         <div class="type-piece">1.7 km du centre</div>
       </div>
@@ -405,8 +406,8 @@ footer { text-align: center; color: var(--text-muted); font-size: 0.75em; paddin
         <div class="titre-carte">6 1/2 secteur Université de Sherbrooke</div>
         <div class="meta-carte">
           <span class="type-piece">6 1/2</span>
-          <span class="type-piece">sherbrooke-qc</span>
-          <span class="badge badge-logisquebec">logisquebec</span>
+          <span class="type-piece">Sherbrooke</span>
+          <span class="badge badge-logisquebec">Logisquebec</span>
         </div>
         <div class="type-piece">3.4 km du centre</div>
       </div>
@@ -426,8 +427,8 @@ footer { text-align: center; color: var(--text-muted); font-size: 0.75em; paddin
         <div class="titre-carte">Studio à louer - 283, King O, Sherbrooke</div>
         <div class="meta-carte">
           <span class="type-piece">Studio</span>
-          <span class="type-piece">sherbrooke-qc</span>
-          <span class="badge badge-logisquebec">logisquebec</span>
+          <span class="type-piece">Sherbrooke</span>
+          <span class="badge badge-logisquebec">Logisquebec</span>
         </div>
         <div class="type-piece">0.5 km du centre</div>
       </div>
@@ -447,8 +448,8 @@ footer { text-align: center; color: var(--text-muted); font-size: 0.75em; paddin
         <div class="titre-carte">Chambre à louer – 12e av. N, Sherbrooke</div>
         <div class="meta-carte">
           <span class="type-piece"></span>
-          <span class="type-piece">sherbrooke-qc</span>
-          <span class="badge badge-logisquebec">logisquebec</span>
+          <span class="type-piece">Sherbrooke</span>
+          <span class="badge badge-logisquebec">Logisquebec</span>
         </div>
         <div class="type-piece">2.4 km du centre</div>
       </div>
@@ -468,8 +469,8 @@ footer { text-align: center; color: var(--text-muted); font-size: 0.75em; paddin
         <div class="titre-carte">3½ à louer - 891, 12e AV N, Sherbrooke</div>
         <div class="meta-carte">
           <span class="type-piece">3 1/2</span>
-          <span class="type-piece">sherbrooke-qc</span>
-          <span class="badge badge-logisquebec">logisquebec</span>
+          <span class="type-piece">Sherbrooke</span>
+          <span class="badge badge-logisquebec">Logisquebec</span>
         </div>
         <div class="type-piece">2.4 km du centre</div>
       </div>
@@ -489,8 +490,8 @@ footer { text-align: center; color: var(--text-muted); font-size: 0.75em; paddin
         <div class="titre-carte">Studio à louer–891, 12e av N, Sherbrooke</div>
         <div class="meta-carte">
           <span class="type-piece">Studio</span>
-          <span class="type-piece">sherbrooke-qc</span>
-          <span class="badge badge-logisquebec">logisquebec</span>
+          <span class="type-piece">Sherbrooke</span>
+          <span class="badge badge-logisquebec">Logisquebec</span>
         </div>
         <div class="type-piece">2.4 km du centre</div>
       </div>
@@ -510,8 +511,8 @@ footer { text-align: center; color: var(--text-muted); font-size: 0.75em; paddin
         <div class="titre-carte">Appartement 4-1/2 à louer</div>
         <div class="meta-carte">
           <span class="type-piece">4 1/2</span>
-          <span class="type-piece">sherbrooke-qc</span>
-          <span class="badge badge-logisquebec">logisquebec</span>
+          <span class="type-piece">Sherbrooke</span>
+          <span class="badge badge-logisquebec">Logisquebec</span>
         </div>
         <div class="type-piece">13.5 km du centre</div>
       </div>
@@ -531,8 +532,8 @@ footer { text-align: center; color: var(--text-muted); font-size: 0.75em; paddin
         <div class="titre-carte">Appartement 3-1/2 à louer</div>
         <div class="meta-carte">
           <span class="type-piece">3 1/2</span>
-          <span class="type-piece">sherbrooke-qc</span>
-          <span class="badge badge-logisquebec">logisquebec</span>
+          <span class="type-piece">Sherbrooke</span>
+          <span class="badge badge-logisquebec">Logisquebec</span>
         </div>
         <div class="type-piece">13.5 km du centre</div>
       </div>
@@ -552,8 +553,8 @@ footer { text-align: center; color: var(--text-muted); font-size: 0.75em; paddin
         <div class="titre-carte">Logement 4-1/2 haute gammes</div>
         <div class="meta-carte">
           <span class="type-piece">4 1/2</span>
-          <span class="type-piece">sherbrooke-qc</span>
-          <span class="badge badge-logisquebec">logisquebec</span>
+          <span class="type-piece">Sherbrooke</span>
+          <span class="badge badge-logisquebec">Logisquebec</span>
         </div>
         <div class="type-piece">7.8 km du centre</div>
       </div>
@@ -573,8 +574,8 @@ footer { text-align: center; color: var(--text-muted); font-size: 0.75em; paddin
         <div class="titre-carte">Grand 4 1/2 lumineux à louer</div>
         <div class="meta-carte">
           <span class="type-piece">4 1/2</span>
-          <span class="type-piece">sherbrooke-qc</span>
-          <span class="badge badge-logisquebec">logisquebec</span>
+          <span class="type-piece">Sherbrooke</span>
+          <span class="badge badge-logisquebec">Logisquebec</span>
         </div>
         <div class="type-piece">1.7 km du centre</div>
       </div>
@@ -594,8 +595,8 @@ footer { text-align: center; color: var(--text-muted); font-size: 0.75em; paddin
         <div class="titre-carte">VIEUX NORD - 1er ÉTAGE  - CHAUFFÉ, EAU CHAUDE INCLUS - DANS TRIPLEX</div>
         <div class="meta-carte">
           <span class="type-piece"></span>
-          <span class="type-piece">sherbrooke-qc</span>
-          <span class="badge badge-lespac">lespac</span>
+          <span class="type-piece">Sherbrooke</span>
+          <span class="badge badge-lespac">Lespac</span>
         </div>
         
       </div>
@@ -615,8 +616,8 @@ footer { text-align: center; color: var(--text-muted); font-size: 0.75em; paddin
         <div class="titre-carte">Maison au bord de l’eau à louer</div>
         <div class="meta-carte">
           <span class="type-piece"></span>
-          <span class="type-piece">sherbrooke-qc</span>
-          <span class="badge badge-lespac">lespac</span>
+          <span class="type-piece">Sherbrooke</span>
+          <span class="badge badge-lespac">Lespac</span>
         </div>
         
       </div>
@@ -636,8 +637,8 @@ footer { text-align: center; color: var(--text-muted); font-size: 0.75em; paddin
         <div class="titre-carte">VIEUX NORD, RAREMENT DISPONIBLE A SHERBROOKE</div>
         <div class="meta-carte">
           <span class="type-piece"></span>
-          <span class="type-piece">sherbrooke-qc</span>
-          <span class="badge badge-lespac">lespac</span>
+          <span class="type-piece">Sherbrooke</span>
+          <span class="badge badge-lespac">Lespac</span>
         </div>
         
       </div>
@@ -657,8 +658,8 @@ footer { text-align: center; color: var(--text-muted); font-size: 0.75em; paddin
         <div class="titre-carte">Appartement 4 ½ semi-meublé situé au 270 rue Gillespie (libre immédiatement) </div>
         <div class="meta-carte">
           <span class="type-piece">4 1/2</span>
-          <span class="type-piece">sherbrooke-qc</span>
-          <span class="badge badge-lespac">lespac</span>
+          <span class="type-piece">Sherbrooke</span>
+          <span class="badge badge-lespac">Lespac</span>
         </div>
         
       </div>
@@ -678,8 +679,8 @@ footer { text-align: center; color: var(--text-muted); font-size: 0.75em; paddin
         <div class="titre-carte">Logement 3 1/2 à sous-louer -  Sherbrooke 10 minutes du Cégep- Mois gratuit</div>
         <div class="meta-carte">
           <span class="type-piece">3 1/2</span>
-          <span class="type-piece">sherbrooke-qc</span>
-          <span class="badge badge-lespac">lespac</span>
+          <span class="type-piece">Sherbrooke</span>
+          <span class="badge badge-lespac">Lespac</span>
         </div>
         
       </div>
@@ -699,8 +700,8 @@ footer { text-align: center; color: var(--text-muted); font-size: 0.75em; paddin
         <div class="titre-carte">Maison de ville à louer </div>
         <div class="meta-carte">
           <span class="type-piece"></span>
-          <span class="type-piece">sherbrooke-qc</span>
-          <span class="badge badge-lespac">lespac</span>
+          <span class="type-piece">Sherbrooke</span>
+          <span class="badge badge-lespac">Lespac</span>
         </div>
         
       </div>
@@ -720,8 +721,8 @@ footer { text-align: center; color: var(--text-muted); font-size: 0.75em; paddin
         <div class="titre-carte">5 1/2 VIEUX NORD, </div>
         <div class="meta-carte">
           <span class="type-piece">5 1/2</span>
-          <span class="type-piece">sherbrooke-qc</span>
-          <span class="badge badge-lespac">lespac</span>
+          <span class="type-piece">Sherbrooke</span>
+          <span class="badge badge-lespac">Lespac</span>
         </div>
         
       </div>
@@ -741,8 +742,8 @@ footer { text-align: center; color: var(--text-muted); font-size: 0.75em; paddin
         <div class="titre-carte">Complexe du Parc | 4 1/2 à Louer | 2 bedrooms apartment for Rent | Sherbrooke</div>
         <div class="meta-carte">
           <span class="type-piece">4 1/2</span>
-          <span class="type-piece">sherbrooke-qc</span>
-          <span class="badge badge-lespac">lespac</span>
+          <span class="type-piece">Sherbrooke</span>
+          <span class="badge badge-lespac">Lespac</span>
         </div>
         
       </div>
@@ -762,8 +763,8 @@ footer { text-align: center; color: var(--text-muted); font-size: 0.75em; paddin
         <div class="titre-carte">2 CH - 2 SDB - Sherbrooke - $1,450 /mo</div>
         <div class="meta-carte">
           <span class="type-piece"></span>
-          <span class="type-piece">sherbrooke-qc</span>
-          <span class="badge badge-lespac">lespac</span>
+          <span class="type-piece">Sherbrooke</span>
+          <span class="badge badge-lespac">Lespac</span>
         </div>
         
       </div>
@@ -783,8 +784,8 @@ footer { text-align: center; color: var(--text-muted); font-size: 0.75em; paddin
         <div class="titre-carte">PREMIER MOIS GRATUIT / 3 &amp; 1/2 AU CENTRE VILLE DE SHERBROOKE</div>
         <div class="meta-carte">
           <span class="type-piece"></span>
-          <span class="type-piece">sherbrooke-qc</span>
-          <span class="badge badge-lespac">lespac</span>
+          <span class="type-piece">Sherbrooke</span>
+          <span class="badge badge-lespac">Lespac</span>
         </div>
         
       </div>
@@ -804,8 +805,8 @@ footer { text-align: center; color: var(--text-muted); font-size: 0.75em; paddin
         <div class="titre-carte">Complexe du Parc | 3 1/2 à Louer | 1 bedroom apartment for Rent | Sherbrooke</div>
         <div class="meta-carte">
           <span class="type-piece">3 1/2</span>
-          <span class="type-piece">sherbrooke-qc</span>
-          <span class="badge badge-lespac">lespac</span>
+          <span class="type-piece">Sherbrooke</span>
+          <span class="badge badge-lespac">Lespac</span>
         </div>
         
       </div>
@@ -825,8 +826,8 @@ footer { text-align: center; color: var(--text-muted); font-size: 0.75em; paddin
         <div class="titre-carte">BEAU 4 1/2 PRÈS U DE SHERBROOKE - IMPECCABLE, SÉCURITAIRE, CALME, SEMI-MEUBLÉ</div>
         <div class="meta-carte">
           <span class="type-piece">4 1/2</span>
-          <span class="type-piece">sherbrooke-qc</span>
-          <span class="badge badge-lespac">lespac</span>
+          <span class="type-piece">Sherbrooke</span>
+          <span class="badge badge-lespac">Lespac</span>
         </div>
         
       </div>
@@ -846,8 +847,8 @@ footer { text-align: center; color: var(--text-muted); font-size: 0.75em; paddin
         <div class="titre-carte">Complexe du Parc | Studio à Louer | Studio for Rent | Sherbrooke</div>
         <div class="meta-carte">
           <span class="type-piece">Studio</span>
-          <span class="type-piece">sherbrooke-qc</span>
-          <span class="badge badge-lespac">lespac</span>
+          <span class="type-piece">Sherbrooke</span>
+          <span class="badge badge-lespac">Lespac</span>
         </div>
         
       </div>
@@ -867,8 +868,8 @@ footer { text-align: center; color: var(--text-muted); font-size: 0.75em; paddin
         <div class="titre-carte">2 CH - 1 SDB - Sherbrooke - $1,445 /mo</div>
         <div class="meta-carte">
           <span class="type-piece"></span>
-          <span class="type-piece">sherbrooke-qc</span>
-          <span class="badge badge-lespac">lespac</span>
+          <span class="type-piece">Sherbrooke</span>
+          <span class="badge badge-lespac">Lespac</span>
         </div>
         
       </div>
@@ -888,8 +889,8 @@ footer { text-align: center; color: var(--text-muted); font-size: 0.75em; paddin
         <div class="titre-carte">Complexe du Parc | Chambre étudiante à louer  | Student room for rent | Sherbrooke</div>
         <div class="meta-carte">
           <span class="type-piece"></span>
-          <span class="type-piece">sherbrooke-qc</span>
-          <span class="badge badge-lespac">lespac</span>
+          <span class="type-piece">Sherbrooke</span>
+          <span class="badge badge-lespac">Lespac</span>
         </div>
         
       </div>
@@ -909,8 +910,8 @@ footer { text-align: center; color: var(--text-muted); font-size: 0.75em; paddin
         <div class="titre-carte">Beau 5 1/2 à louer</div>
         <div class="meta-carte">
           <span class="type-piece">5 1/2</span>
-          <span class="type-piece">sherbrooke-qc</span>
-          <span class="badge badge-lespac">lespac</span>
+          <span class="type-piece">Sherbrooke</span>
+          <span class="badge badge-lespac">Lespac</span>
         </div>
         
       </div>
@@ -930,8 +931,8 @@ footer { text-align: center; color: var(--text-muted); font-size: 0.75em; paddin
         <div class="titre-carte">3½ à louer – 950 $/mois | Sherbrooke Est</div>
         <div class="meta-carte">
           <span class="type-piece">3 1/2</span>
-          <span class="type-piece">sherbrooke-qc</span>
-          <span class="badge badge-lespac">lespac</span>
+          <span class="type-piece">Sherbrooke</span>
+          <span class="badge badge-lespac">Lespac</span>
         </div>
         
       </div>
@@ -951,8 +952,8 @@ footer { text-align: center; color: var(--text-muted); font-size: 0.75em; paddin
         <div class="titre-carte">Très bel et grand appartement 5 ½  Vieux-Nord de Sherbrooke</div>
         <div class="meta-carte">
           <span class="type-piece">5 1/2</span>
-          <span class="type-piece">sherbrooke-qc</span>
-          <span class="badge badge-lespac">lespac</span>
+          <span class="type-piece">Sherbrooke</span>
+          <span class="badge badge-lespac">Lespac</span>
         </div>
         
       </div>
@@ -972,8 +973,8 @@ footer { text-align: center; color: var(--text-muted); font-size: 0.75em; paddin
         <div class="titre-carte">Superbe 2½ style condo à 825$/mois – Tout inclus – Secteur Ascot</div>
         <div class="meta-carte">
           <span class="type-piece">2 1/2</span>
-          <span class="type-piece">sherbrooke-qc</span>
-          <span class="badge badge-lespac">lespac</span>
+          <span class="type-piece">Sherbrooke</span>
+          <span class="badge badge-lespac">Lespac</span>
         </div>
         
       </div>
@@ -993,8 +994,8 @@ footer { text-align: center; color: var(--text-muted); font-size: 0.75em; paddin
         <div class="titre-carte">4 1/2 à louer (Bromptonville)</div>
         <div class="meta-carte">
           <span class="type-piece">4 1/2</span>
-          <span class="type-piece">sherbrooke-qc</span>
-          <span class="badge badge-lespac">lespac</span>
+          <span class="type-piece">Sherbrooke</span>
+          <span class="badge badge-lespac">Lespac</span>
         </div>
         
       </div>
@@ -1014,8 +1015,8 @@ footer { text-align: center; color: var(--text-muted); font-size: 0.75em; paddin
         <div class="titre-carte">580, rue de Chambly, Sherbrooke (Jacques-Cartier) à louer (Maison)</div>
         <div class="meta-carte">
           <span class="type-piece"></span>
-          <span class="type-piece">sherbrooke-qc</span>
-          <span class="badge badge-duproprio">duproprio</span>
+          <span class="type-piece">Sherbrooke</span>
+          <span class="badge badge-duproprio">Duproprio</span>
         </div>
         <div class="type-piece">2.1 km du centre</div>
       </div>
@@ -1035,8 +1036,8 @@ footer { text-align: center; color: var(--text-muted); font-size: 0.75em; paddin
         <div class="titre-carte">182, 5e avenue, Sherbrooke (Fleurimont) à louer (3 1/2)</div>
         <div class="meta-carte">
           <span class="type-piece">3 1/2</span>
-          <span class="type-piece">sherbrooke-qc</span>
-          <span class="badge badge-duproprio">duproprio</span>
+          <span class="type-piece">Sherbrooke</span>
+          <span class="badge badge-duproprio">Duproprio</span>
         </div>
         <div class="type-piece">1.2 km du centre</div>
       </div>
@@ -1056,8 +1057,8 @@ footer { text-align: center; color: var(--text-muted); font-size: 0.75em; paddin
         <div class="titre-carte">176, rue Laurier, Sherbrooke (Jacques-Cartier) à louer (5 1/2)</div>
         <div class="meta-carte">
           <span class="type-piece">5 1/2</span>
-          <span class="type-piece">sherbrooke-qc</span>
-          <span class="badge badge-duproprio">duproprio</span>
+          <span class="type-piece">Sherbrooke</span>
+          <span class="badge badge-duproprio">Duproprio</span>
         </div>
         <div class="type-piece">0.7 km du centre</div>
       </div>
@@ -1077,8 +1078,8 @@ footer { text-align: center; color: var(--text-muted); font-size: 0.75em; paddin
         <div class="titre-carte">Studio - Les Jardins Hauterive - 215 rue Bellevue, Sherbrooke (Jacques-Cartier) à louer (Studio loft)</div>
         <div class="meta-carte">
           <span class="type-piece">Studio</span>
-          <span class="type-piece">sherbrooke-qc</span>
-          <span class="badge badge-duproprio">duproprio</span>
+          <span class="type-piece">Sherbrooke</span>
+          <span class="badge badge-duproprio">Duproprio</span>
         </div>
         <div class="type-piece">2.4 km du centre</div>
       </div>
@@ -1098,8 +1099,8 @@ footer { text-align: center; color: var(--text-muted); font-size: 0.75em; paddin
         <div class="titre-carte">2-5909, Boulevard René Lévesque, Sherbrooke (St-Élie-d&amp;#39;Orford) à louer (5 1/2)</div>
         <div class="meta-carte">
           <span class="type-piece">5 1/2</span>
-          <span class="type-piece">sherbrooke-qc</span>
-          <span class="badge badge-duproprio">duproprio</span>
+          <span class="type-piece">Sherbrooke</span>
+          <span class="badge badge-duproprio">Duproprio</span>
         </div>
         <div class="type-piece">8.8 km du centre</div>
       </div>
@@ -1119,8 +1120,8 @@ footer { text-align: center; color: var(--text-muted); font-size: 0.75em; paddin
         <div class="titre-carte">3020, Gastin, Sherbrooke (Fleurimont) à louer (4 1/2)</div>
         <div class="meta-carte">
           <span class="type-piece">4 1/2</span>
-          <span class="type-piece">sherbrooke-qc</span>
-          <span class="badge badge-duproprio">duproprio</span>
+          <span class="type-piece">Sherbrooke</span>
+          <span class="badge badge-duproprio">Duproprio</span>
         </div>
         <div class="type-piece">5.9 km du centre</div>
       </div>
@@ -1140,8 +1141,8 @@ footer { text-align: center; color: var(--text-muted); font-size: 0.75em; paddin
         <div class="titre-carte">180, Hocquart, Sherbrooke (Fleurimont) à louer (5 1/2)</div>
         <div class="meta-carte">
           <span class="type-piece">5 1/2</span>
-          <span class="type-piece">sherbrooke-qc</span>
-          <span class="badge badge-duproprio">duproprio</span>
+          <span class="type-piece">Sherbrooke</span>
+          <span class="badge badge-duproprio">Duproprio</span>
         </div>
         <div class="type-piece">2.5 km du centre</div>
       </div>
@@ -1161,8 +1162,8 @@ footer { text-align: center; color: var(--text-muted); font-size: 0.75em; paddin
         <div class="titre-carte">1163, Rue Liguori, Sherbrooke (Jacques-Cartier) à louer (4 1/2)</div>
         <div class="meta-carte">
           <span class="type-piece">4 1/2</span>
-          <span class="type-piece">sherbrooke-qc</span>
-          <span class="badge badge-duproprio">duproprio</span>
+          <span class="type-piece">Sherbrooke</span>
+          <span class="badge badge-duproprio">Duproprio</span>
         </div>
         <div class="type-piece">1.4 km du centre</div>
       </div>
@@ -1182,8 +1183,8 @@ footer { text-align: center; color: var(--text-muted); font-size: 0.75em; paddin
         <div class="titre-carte">135, rue du Conseil, Sherbrooke (Mont-Bellevue) à louer (Maison)</div>
         <div class="meta-carte">
           <span class="type-piece"></span>
-          <span class="type-piece">sherbrooke-qc</span>
-          <span class="badge badge-duproprio">duproprio</span>
+          <span class="type-piece">Sherbrooke</span>
+          <span class="badge badge-duproprio">Duproprio</span>
         </div>
         <div class="type-piece">0.7 km du centre</div>
       </div>
@@ -1203,8 +1204,8 @@ footer { text-align: center; color: var(--text-muted); font-size: 0.75em; paddin
         <div class="titre-carte">304-1980, des boises, Sherbrooke (Mont-Bellevue) à louer (4 1/2)</div>
         <div class="meta-carte">
           <span class="type-piece">4 1/2</span>
-          <span class="type-piece">sherbrooke-qc</span>
-          <span class="badge badge-duproprio">duproprio</span>
+          <span class="type-piece">Sherbrooke</span>
+          <span class="badge badge-duproprio">Duproprio</span>
         </div>
         <div class="type-piece">2.9 km du centre</div>
       </div>
@@ -1224,8 +1225,8 @@ footer { text-align: center; color: var(--text-muted); font-size: 0.75em; paddin
         <div class="titre-carte">484, rue Moore, Sherbrooke (Jacques-Cartier) à louer (6 1/2)</div>
         <div class="meta-carte">
           <span class="type-piece">6 1/2</span>
-          <span class="type-piece">sherbrooke-qc</span>
-          <span class="badge badge-duproprio">duproprio</span>
+          <span class="type-piece">Sherbrooke</span>
+          <span class="badge badge-duproprio">Duproprio</span>
         </div>
         <div class="type-piece">0.6 km du centre</div>
       </div>
@@ -1245,8 +1246,8 @@ footer { text-align: center; color: var(--text-muted); font-size: 0.75em; paddin
         <div class="titre-carte">486, Moore, Sherbrooke (Jacques-Cartier) à louer (6 1/2)</div>
         <div class="meta-carte">
           <span class="type-piece">6 1/2</span>
-          <span class="type-piece">sherbrooke-qc</span>
-          <span class="badge badge-duproprio">duproprio</span>
+          <span class="type-piece">Sherbrooke</span>
+          <span class="badge badge-duproprio">Duproprio</span>
         </div>
         <div class="type-piece">0.6 km du centre</div>
       </div>
@@ -1266,8 +1267,8 @@ footer { text-align: center; color: var(--text-muted); font-size: 0.75em; paddin
         <div class="titre-carte">ANIMAUX ACCEPTÉS// 4 1/2 dans un duplex</div>
         <div class="meta-carte">
           <span class="type-piece">4 1/2</span>
-          <span class="type-piece">sherbrooke-qc</span>
-          <span class="badge badge-kijiji">kijiji</span>
+          <span class="type-piece">Sherbrooke</span>
+          <span class="badge badge-kijiji">Kijiji</span>
         </div>
         <div class="type-piece">12.9 km du centre</div>
       </div>
@@ -1287,8 +1288,8 @@ footer { text-align: center; color: var(--text-muted); font-size: 0.75em; paddin
         <div class="titre-carte">chalet à louer</div>
         <div class="meta-carte">
           <span class="type-piece"></span>
-          <span class="type-piece">sherbrooke-qc</span>
-          <span class="badge badge-kijiji">kijiji</span>
+          <span class="type-piece">Sherbrooke</span>
+          <span class="badge badge-kijiji">Kijiji</span>
         </div>
         <div class="type-piece">33.8 km du centre</div>
       </div>
@@ -1308,8 +1309,8 @@ footer { text-align: center; color: var(--text-muted); font-size: 0.75em; paddin
         <div class="titre-carte">appartement</div>
         <div class="meta-carte">
           <span class="type-piece"></span>
-          <span class="type-piece">sherbrooke-qc</span>
-          <span class="badge badge-kijiji">kijiji</span>
+          <span class="type-piece">Sherbrooke</span>
+          <span class="badge badge-kijiji">Kijiji</span>
         </div>
         <div class="type-piece">13.5 km du centre</div>
       </div>
@@ -1329,8 +1330,8 @@ footer { text-align: center; color: var(--text-muted); font-size: 0.75em; paddin
         <div class="titre-carte">Local a louer CENTRE DE COATICOOK</div>
         <div class="meta-carte">
           <span class="type-piece"></span>
-          <span class="type-piece">sherbrooke-qc</span>
-          <span class="badge badge-kijiji">kijiji</span>
+          <span class="type-piece">Sherbrooke</span>
+          <span class="badge badge-kijiji">Kijiji</span>
         </div>
         <div class="type-piece">30.9 km du centre</div>
       </div>
@@ -1350,8 +1351,8 @@ footer { text-align: center; color: var(--text-muted); font-size: 0.75em; paddin
         <div class="titre-carte">3 1/2 SECTEUR CARREFOUR DE L`ESTRIE HYDRO INCLUS</div>
         <div class="meta-carte">
           <span class="type-piece">3 1/2</span>
-          <span class="type-piece">sherbrooke-qc</span>
-          <span class="badge badge-kijiji">kijiji</span>
+          <span class="type-piece">Sherbrooke</span>
+          <span class="badge badge-kijiji">Kijiji</span>
         </div>
         <div class="type-piece">4.1 km du centre</div>
       </div>
@@ -1371,8 +1372,8 @@ footer { text-align: center; color: var(--text-muted); font-size: 0.75em; paddin
         <div class="titre-carte">Magnifique 5 1/2 centre-ville</div>
         <div class="meta-carte">
           <span class="type-piece">5 1/2</span>
-          <span class="type-piece">sherbrooke-qc</span>
-          <span class="badge badge-kijiji">kijiji</span>
+          <span class="type-piece">Sherbrooke</span>
+          <span class="badge badge-kijiji">Kijiji</span>
         </div>
         <div class="type-piece">0.9 km du centre</div>
       </div>
@@ -1392,8 +1393,8 @@ footer { text-align: center; color: var(--text-muted); font-size: 0.75em; paddin
         <div class="titre-carte">COATICOOK - Appartement 4 1/2 - À louer maintenant</div>
         <div class="meta-carte">
           <span class="type-piece">4 1/2</span>
-          <span class="type-piece">sherbrooke-qc</span>
-          <span class="badge badge-kijiji">kijiji</span>
+          <span class="type-piece">Sherbrooke</span>
+          <span class="badge badge-kijiji">Kijiji</span>
         </div>
         <div class="type-piece">31.1 km du centre</div>
       </div>
@@ -1413,8 +1414,8 @@ footer { text-align: center; color: var(--text-muted); font-size: 0.75em; paddin
         <div class="titre-carte">4 1/2 à Louer | 2 bedrooms for Rent | Sherbrooke</div>
         <div class="meta-carte">
           <span class="type-piece">4 1/2</span>
-          <span class="type-piece">sherbrooke-qc</span>
-          <span class="badge badge-kijiji">kijiji</span>
+          <span class="type-piece">Sherbrooke</span>
+          <span class="badge badge-kijiji">Kijiji</span>
         </div>
         <div class="type-piece">0.5 km du centre</div>
       </div>
@@ -1434,8 +1435,8 @@ footer { text-align: center; color: var(--text-muted); font-size: 0.75em; paddin
         <div class="titre-carte">Studio à Louer | Studio for Rent | Sherbrooke</div>
         <div class="meta-carte">
           <span class="type-piece">Studio</span>
-          <span class="type-piece">sherbrooke-qc</span>
-          <span class="badge badge-kijiji">kijiji</span>
+          <span class="type-piece">Sherbrooke</span>
+          <span class="badge badge-kijiji">Kijiji</span>
         </div>
         <div class="type-piece">0.5 km du centre</div>
       </div>
@@ -1455,8 +1456,8 @@ footer { text-align: center; color: var(--text-muted); font-size: 0.75em; paddin
         <div class="titre-carte">3 1/2 à Louer | 1 bedroom for Rent | Sherbrooke</div>
         <div class="meta-carte">
           <span class="type-piece">3 1/2</span>
-          <span class="type-piece">sherbrooke-qc</span>
-          <span class="badge badge-kijiji">kijiji</span>
+          <span class="type-piece">Sherbrooke</span>
+          <span class="badge badge-kijiji">Kijiji</span>
         </div>
         <div class="type-piece">0.4 km du centre</div>
       </div>
@@ -1476,8 +1477,8 @@ footer { text-align: center; color: var(--text-muted); font-size: 0.75em; paddin
         <div class="titre-carte">condo a louer a Magog disponible location au mois</div>
         <div class="meta-carte">
           <span class="type-piece"></span>
-          <span class="type-piece">sherbrooke-qc</span>
-          <span class="badge badge-kijiji">kijiji</span>
+          <span class="type-piece">Sherbrooke</span>
+          <span class="badge badge-kijiji">Kijiji</span>
         </div>
         <div class="type-piece">26.6 km du centre</div>
       </div>
@@ -1497,8 +1498,8 @@ footer { text-align: center; color: var(--text-muted); font-size: 0.75em; paddin
         <div class="titre-carte">À louer - Logement Coop</div>
         <div class="meta-carte">
           <span class="type-piece"></span>
-          <span class="type-piece">sherbrooke-qc</span>
-          <span class="badge badge-kijiji">kijiji</span>
+          <span class="type-piece">Sherbrooke</span>
+          <span class="badge badge-kijiji">Kijiji</span>
         </div>
         <div class="type-piece">2.1 km du centre</div>
       </div>
@@ -1518,8 +1519,8 @@ footer { text-align: center; color: var(--text-muted); font-size: 0.75em; paddin
         <div class="titre-carte">2 ½ À LOUER | 950 $/MOIS | 1ER OCTOBRE | 3 MOIS GRATUIT</div>
         <div class="meta-carte">
           <span class="type-piece">2 1/2</span>
-          <span class="type-piece">sherbrooke-qc</span>
-          <span class="badge badge-kijiji">kijiji</span>
+          <span class="type-piece">Sherbrooke</span>
+          <span class="badge badge-kijiji">Kijiji</span>
         </div>
         <div class="type-piece">3.8 km du centre</div>
       </div>
@@ -1539,8 +1540,8 @@ footer { text-align: center; color: var(--text-muted); font-size: 0.75em; paddin
         <div class="titre-carte">5 ½ de style Condo / Plateau McCrea - Secteur Nord</div>
         <div class="meta-carte">
           <span class="type-piece">5 1/2</span>
-          <span class="type-piece">sherbrooke-qc</span>
-          <span class="badge badge-kijiji">kijiji</span>
+          <span class="type-piece">Sherbrooke</span>
+          <span class="badge badge-kijiji">Kijiji</span>
         </div>
         <div class="type-piece">5.0 km du centre</div>
       </div>
@@ -1560,8 +1561,8 @@ footer { text-align: center; color: var(--text-muted); font-size: 0.75em; paddin
         <div class="titre-carte">4 ½  Nord, PISC. CREUSÉE, INTERNET +Chauffage + eau chaude</div>
         <div class="meta-carte">
           <span class="type-piece">4 1/2</span>
-          <span class="type-piece">sherbrooke-qc</span>
-          <span class="badge badge-kijiji">kijiji</span>
+          <span class="type-piece">Sherbrooke</span>
+          <span class="badge badge-kijiji">Kijiji</span>
         </div>
         <div class="type-piece">4.1 km du centre</div>
       </div>
@@ -1581,8 +1582,8 @@ footer { text-align: center; color: var(--text-muted); font-size: 0.75em; paddin
         <div class="titre-carte">4 ½ - Situé tout près du CHUS (rue des Lys)</div>
         <div class="meta-carte">
           <span class="type-piece">4 1/2</span>
-          <span class="type-piece">sherbrooke-qc</span>
-          <span class="badge badge-kijiji">kijiji</span>
+          <span class="type-piece">Sherbrooke</span>
+          <span class="badge badge-kijiji">Kijiji</span>
         </div>
         <div class="type-piece">2.9 km du centre</div>
       </div>
@@ -1602,8 +1603,8 @@ footer { text-align: center; color: var(--text-muted); font-size: 0.75em; paddin
         <div class="titre-carte">4 ½ sect. Cégep /Chus  EAU CHAUDE  Internet</div>
         <div class="meta-carte">
           <span class="type-piece">4 1/2</span>
-          <span class="type-piece">sherbrooke-qc</span>
-          <span class="badge badge-kijiji">kijiji</span>
+          <span class="type-piece">Sherbrooke</span>
+          <span class="badge badge-kijiji">Kijiji</span>
         </div>
         <div class="type-piece">2.2 km du centre</div>
       </div>
@@ -1623,8 +1624,8 @@ footer { text-align: center; color: var(--text-muted); font-size: 0.75em; paddin
         <div class="titre-carte">3 1/2 sect. Rock- Forest + Chauffage + Eau-chaude inclus</div>
         <div class="meta-carte">
           <span class="type-piece">3 1/2</span>
-          <span class="type-piece">sherbrooke-qc</span>
-          <span class="badge badge-kijiji">kijiji</span>
+          <span class="type-piece">Sherbrooke</span>
+          <span class="badge badge-kijiji">Kijiji</span>
         </div>
         <div class="type-piece">7.1 km du centre</div>
       </div>
@@ -1644,8 +1645,8 @@ footer { text-align: center; color: var(--text-muted); font-size: 0.75em; paddin
         <div class="titre-carte">5 1/2 - Style condo à Rock-Forest</div>
         <div class="meta-carte">
           <span class="type-piece">5 1/2</span>
-          <span class="type-piece">sherbrooke-qc</span>
-          <span class="badge badge-kijiji">kijiji</span>
+          <span class="type-piece">Sherbrooke</span>
+          <span class="badge badge-kijiji">Kijiji</span>
         </div>
         <div class="type-piece">9.7 km du centre</div>
       </div>
@@ -1665,8 +1666,8 @@ footer { text-align: center; color: var(--text-muted); font-size: 0.75em; paddin
         <div class="titre-carte">3 ½ - Situé dans le quartier Nord (rue McGregor)</div>
         <div class="meta-carte">
           <span class="type-piece">3 1/2</span>
-          <span class="type-piece">sherbrooke-qc</span>
-          <span class="badge badge-kijiji">kijiji</span>
+          <span class="type-piece">Sherbrooke</span>
+          <span class="badge badge-kijiji">Kijiji</span>
         </div>
         <div class="type-piece">4.1 km du centre</div>
       </div>
@@ -1686,8 +1687,8 @@ footer { text-align: center; color: var(--text-muted); font-size: 0.75em; paddin
         <div class="titre-carte">4 1/2 - Situé près du Cégep de Sherbrooke et du CHUS</div>
         <div class="meta-carte">
           <span class="type-piece">4 1/2</span>
-          <span class="type-piece">sherbrooke-qc</span>
-          <span class="badge badge-kijiji">kijiji</span>
+          <span class="type-piece">Sherbrooke</span>
+          <span class="badge badge-kijiji">Kijiji</span>
         </div>
         <div class="type-piece">2.4 km du centre</div>
       </div>
@@ -1707,8 +1708,8 @@ footer { text-align: center; color: var(--text-muted); font-size: 0.75em; paddin
         <div class="titre-carte">5 ½ - Situé dans le quartier Nord (rue McGregor)</div>
         <div class="meta-carte">
           <span class="type-piece">5 1/2</span>
-          <span class="type-piece">sherbrooke-qc</span>
-          <span class="badge badge-kijiji">kijiji</span>
+          <span class="type-piece">Sherbrooke</span>
+          <span class="badge badge-kijiji">Kijiji</span>
         </div>
         <div class="type-piece">4.1 km du centre</div>
       </div>
@@ -1728,8 +1729,8 @@ footer { text-align: center; color: var(--text-muted); font-size: 0.75em; paddin
         <div class="titre-carte">5 ½ de style Condo / Plateau McCrea - Secteur Nord</div>
         <div class="meta-carte">
           <span class="type-piece">5 1/2</span>
-          <span class="type-piece">sherbrooke-qc</span>
-          <span class="badge badge-kijiji">kijiji</span>
+          <span class="type-piece">Sherbrooke</span>
+          <span class="badge badge-kijiji">Kijiji</span>
         </div>
         <div class="type-piece">4.7 km du centre</div>
       </div>
@@ -1749,8 +1750,8 @@ footer { text-align: center; color: var(--text-muted); font-size: 0.75em; paddin
         <div class="titre-carte">6 1/2 - Style condo à Rock-Forest</div>
         <div class="meta-carte">
           <span class="type-piece">6 1/2</span>
-          <span class="type-piece">sherbrooke-qc</span>
-          <span class="badge badge-kijiji">kijiji</span>
+          <span class="type-piece">Sherbrooke</span>
+          <span class="badge badge-kijiji">Kijiji</span>
         </div>
         <div class="type-piece">9.5 km du centre</div>
       </div>
@@ -1770,8 +1771,8 @@ footer { text-align: center; color: var(--text-muted); font-size: 0.75em; paddin
         <div class="titre-carte">5 1/2 - Les appartements Galt</div>
         <div class="meta-carte">
           <span class="type-piece">5 1/2</span>
-          <span class="type-piece">sherbrooke-qc</span>
-          <span class="badge badge-kijiji">kijiji</span>
+          <span class="type-piece">Sherbrooke</span>
+          <span class="badge badge-kijiji">Kijiji</span>
         </div>
         <div class="type-piece">4.2 km du centre</div>
       </div>
@@ -1791,8 +1792,8 @@ footer { text-align: center; color: var(--text-muted); font-size: 0.75em; paddin
         <div class="titre-carte">5 ½ de style Condo / Plateau McCrea - Secteur Nord</div>
         <div class="meta-carte">
           <span class="type-piece">5 1/2</span>
-          <span class="type-piece">sherbrooke-qc</span>
-          <span class="badge badge-kijiji">kijiji</span>
+          <span class="type-piece">Sherbrooke</span>
+          <span class="badge badge-kijiji">Kijiji</span>
         </div>
         <div class="type-piece">4.7 km du centre</div>
       </div>
@@ -1812,8 +1813,8 @@ footer { text-align: center; color: var(--text-muted); font-size: 0.75em; paddin
         <div class="titre-carte">5 ½ sect Cégep Chus,CHAUFFÉ-EAU CHAUDE Internet inclus</div>
         <div class="meta-carte">
           <span class="type-piece">5 1/2</span>
-          <span class="type-piece">sherbrooke-qc</span>
-          <span class="badge badge-kijiji">kijiji</span>
+          <span class="type-piece">Sherbrooke</span>
+          <span class="badge badge-kijiji">Kijiji</span>
         </div>
         <div class="type-piece">2.2 km du centre</div>
       </div>
@@ -1833,8 +1834,8 @@ footer { text-align: center; color: var(--text-muted); font-size: 0.75em; paddin
         <div class="titre-carte">4 ½ - Situé dans le quartier Nord (rue McGregor)</div>
         <div class="meta-carte">
           <span class="type-piece">4 1/2</span>
-          <span class="type-piece">sherbrooke-qc</span>
-          <span class="badge badge-kijiji">kijiji</span>
+          <span class="type-piece">Sherbrooke</span>
+          <span class="badge badge-kijiji">Kijiji</span>
         </div>
         <div class="type-piece">4.1 km du centre</div>
       </div>
@@ -1854,8 +1855,8 @@ footer { text-align: center; color: var(--text-muted); font-size: 0.75em; paddin
         <div class="titre-carte">Parfait petit 3/12</div>
         <div class="meta-carte">
           <span class="type-piece"></span>
-          <span class="type-piece">sherbrooke-qc</span>
-          <span class="badge badge-kijiji">kijiji</span>
+          <span class="type-piece">Sherbrooke</span>
+          <span class="badge badge-kijiji">Kijiji</span>
         </div>
         <div class="type-piece">1.7 km du centre</div>
       </div>
@@ -1875,8 +1876,8 @@ footer { text-align: center; color: var(--text-muted); font-size: 0.75em; paddin
         <div class="titre-carte">App. 2-1/2, secteur UdeS</div>
         <div class="meta-carte">
           <span class="type-piece">2 1/2</span>
-          <span class="type-piece">sherbrooke-qc</span>
-          <span class="badge badge-kijiji">kijiji</span>
+          <span class="type-piece">Sherbrooke</span>
+          <span class="badge badge-kijiji">Kijiji</span>
         </div>
         <div class="type-piece">3.6 km du centre</div>
       </div>
@@ -1896,8 +1897,8 @@ footer { text-align: center; color: var(--text-muted); font-size: 0.75em; paddin
         <div class="titre-carte">GRAND 4 1/2 A LOUER SHERBROOKE SECTEUR MONT-BELLEVUE</div>
         <div class="meta-carte">
           <span class="type-piece">4 1/2</span>
-          <span class="type-piece">sherbrooke-qc</span>
-          <span class="badge badge-kijiji">kijiji</span>
+          <span class="type-piece">Sherbrooke</span>
+          <span class="badge badge-kijiji">Kijiji</span>
         </div>
         <div class="type-piece">2.6 km du centre</div>
       </div>
@@ -1917,8 +1918,8 @@ footer { text-align: center; color: var(--text-muted); font-size: 0.75em; paddin
         <div class="titre-carte">Près du CHUS - 4 et demi très éclairé - Appartement style condo</div>
         <div class="meta-carte">
           <span class="type-piece"></span>
-          <span class="type-piece">sherbrooke-qc</span>
-          <span class="badge badge-kijiji">kijiji</span>
+          <span class="type-piece">Sherbrooke</span>
+          <span class="badge badge-kijiji">Kijiji</span>
         </div>
         <div class="type-piece">3.7 km du centre</div>
       </div>
@@ -1938,8 +1939,8 @@ footer { text-align: center; color: var(--text-muted); font-size: 0.75em; paddin
         <div class="titre-carte">COOPÉRATIVE CHAMPLAIN DE MAGOG 4 1/2 A LOUER</div>
         <div class="meta-carte">
           <span class="type-piece">4 1/2</span>
-          <span class="type-piece">sherbrooke-qc</span>
-          <span class="badge badge-kijiji">kijiji</span>
+          <span class="type-piece">Sherbrooke</span>
+          <span class="badge badge-kijiji">Kijiji</span>
         </div>
         <div class="type-piece">23.9 km du centre</div>
       </div>
@@ -1959,8 +1960,8 @@ footer { text-align: center; color: var(--text-muted); font-size: 0.75em; paddin
         <div class="titre-carte">Appartement de 2 chambres à louer</div>
         <div class="meta-carte">
           <span class="type-piece"></span>
-          <span class="type-piece">sherbrooke-qc</span>
-          <span class="badge badge-kijiji">kijiji</span>
+          <span class="type-piece">Sherbrooke</span>
+          <span class="badge badge-kijiji">Kijiji</span>
         </div>
         <div class="type-piece">3.0 km du centre</div>
       </div>
@@ -1980,8 +1981,8 @@ footer { text-align: center; color: var(--text-muted); font-size: 0.75em; paddin
         <div class="titre-carte">Vieux Nord deux pas du centre ville .  Tout inclus.</div>
         <div class="meta-carte">
           <span class="type-piece"></span>
-          <span class="type-piece">sherbrooke-qc</span>
-          <span class="badge badge-kijiji">kijiji</span>
+          <span class="type-piece">Sherbrooke</span>
+          <span class="badge badge-kijiji">Kijiji</span>
         </div>
         <div class="type-piece">1.0 km du centre</div>
       </div>
@@ -2001,8 +2002,8 @@ footer { text-align: center; color: var(--text-muted); font-size: 0.75em; paddin
         <div class="titre-carte">tres Grand et magnifique 4 1/2 secteur Nord</div>
         <div class="meta-carte">
           <span class="type-piece">4 1/2</span>
-          <span class="type-piece">sherbrooke-qc</span>
-          <span class="badge badge-kijiji">kijiji</span>
+          <span class="type-piece">Sherbrooke</span>
+          <span class="badge badge-kijiji">Kijiji</span>
         </div>
         <div class="type-piece">4.5 km du centre</div>
       </div>
@@ -2022,8 +2023,8 @@ footer { text-align: center; color: var(--text-muted); font-size: 0.75em; paddin
         <div class="titre-carte">Logement à louer</div>
         <div class="meta-carte">
           <span class="type-piece"></span>
-          <span class="type-piece">sherbrooke-qc</span>
-          <span class="badge badge-kijiji">kijiji</span>
+          <span class="type-piece">Sherbrooke</span>
+          <span class="badge badge-kijiji">Kijiji</span>
         </div>
         <div class="type-piece">8.3 km du centre</div>
       </div>
@@ -2043,8 +2044,8 @@ footer { text-align: center; color: var(--text-muted); font-size: 0.75em; paddin
         <div class="titre-carte">TOUT EST INCLUS : Internet, Chauffage, Electricité et Electro+ .</div>
         <div class="meta-carte">
           <span class="type-piece"></span>
-          <span class="type-piece">sherbrooke-qc</span>
-          <span class="badge badge-kijiji">kijiji</span>
+          <span class="type-piece">Sherbrooke</span>
+          <span class="badge badge-kijiji">Kijiji</span>
         </div>
         <div class="type-piece">1.1 km du centre</div>
       </div>
@@ -2064,8 +2065,8 @@ footer { text-align: center; color: var(--text-muted); font-size: 0.75em; paddin
         <div class="titre-carte">5½ TRÈS BEAU,GRAND, EAU CHAUDE! 514 770-4513.Librteme</div>
         <div class="meta-carte">
           <span class="type-piece">5 1/2</span>
-          <span class="type-piece">sherbrooke-qc</span>
-          <span class="badge badge-kijiji">kijiji</span>
+          <span class="type-piece">Sherbrooke</span>
+          <span class="badge badge-kijiji">Kijiji</span>
         </div>
         <div class="type-piece">2.7 km du centre</div>
       </div>
@@ -2085,8 +2086,8 @@ footer { text-align: center; color: var(--text-muted); font-size: 0.75em; paddin
         <div class="titre-carte">3½,4½,5½TRÈSBEAUX,GRANDS,PISCINE INT,SAUNA,CHAUFFÉ,ASCENSEURS</div>
         <div class="meta-carte">
           <span class="type-piece">3 1/2</span>
-          <span class="type-piece">sherbrooke-qc</span>
-          <span class="badge badge-kijiji">kijiji</span>
+          <span class="type-piece">Sherbrooke</span>
+          <span class="badge badge-kijiji">Kijiji</span>
         </div>
         <div class="type-piece">2.2 km du centre</div>
       </div>

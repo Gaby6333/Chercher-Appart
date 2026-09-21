@@ -92,14 +92,24 @@ header .sous-titre { color: var(--text-muted); font-size: 0.78em; margin-top: 0.
 .badge-logisquebec { background: #2563a8; }
 .badge-appartogo { background: #d9822b; }
 .type-piece { font-size: 0.78em; color: var(--text-muted); }
+.lien-doublon {
+  background: none; border: none; padding: 0; margin-right: 0.6em; font-size: 0.78em;
+  color: var(--accent); text-decoration: underline; cursor: pointer;
+}
+.banniere-perimee {
+  background: var(--danger); color: white; text-align: center; font-size: 0.82em; padding: 0.6em 1em;
+}
 #vide { display: none; text-align: center; color: var(--text-muted); padding: 3em 1em; }
 footer { text-align: center; color: var(--text-muted); font-size: 0.75em; padding: 1.5em 1em 0.5em; }
 </style>
 </head>
 <body>
+<div id="banniere-perimee" class="banniere-perimee" hidden>
+  Ces donnees datent d'un bon moment, l'app tourne peut-etre plus sur le PC.
+</div>
 <header>
   <h1>Logement Watcher</h1>
-  <div class="sous-titre">Mise a jour: 2026-09-21 08:34 &middot; 193 annonces</div>
+  <div class="sous-titre">Mise a jour: 2026-09-21 08:48 &middot; 193 annonces</div>
   <div class="barre-outils">
     <input type="text" id="recherche" placeholder="Chercher un mot-cle...">
     <button id="toggle-filtres" type="button">Filtres</button>
@@ -143,6 +153,28 @@ footer { text-align: center; color: var(--text-muted); font-size: 0.75em; paddin
 <div id="compte-resultats"></div>
 <div id="grille">
 
+    <a class="carte" href="https://www.logisquebec.com/chambre-et-colocation-a-louer-fleurimont-l362139" target="_blank" rel="noopener"
+       data-id="https://www.logisquebec.com/chambre-et-colocation-a-louer-fleurimont-l362139" data-titre="Immeuble - 401-407 Papineau, Sherbrooke Chambre à louer - Libre immédiatement" data-ville="sherbrooke-qc"
+       data-type="" data-site="logisquebec"
+       data-prix="500" data-deal="0" data-date="2026-09-21T08:48:40.136939"
+       data-distance="1.1030951182139213">
+      <div class="zone-image">
+        <img src="https://i.logisquebec.com/i-a-louer/129532/362139/1.jpg" loading="lazy" alt="" onerror="this.remove()">
+        
+        <button class="bouton-favori" aria-label="Favori" type="button">&#9825;</button>
+      </div>
+      <div class="corps-carte">
+        <div class="prix-carte">500$/mois</div>
+        <div class="titre-carte">Immeuble - 401-407 Papineau, Sherbrooke Chambre à louer - Libre immédiatement</div>
+        <div class="meta-carte">
+          <span class="type-piece"></span>
+          <span class="type-piece">Sherbrooke</span>
+          <span class="badge badge-logisquebec">Logisquebec</span>
+        </div>
+        <div class="type-piece">1.1 km du centre</div>
+        
+      </div>
+    </a>
     <a class="carte" href="https://appartogo.com/en/apartment-rent/canada/quebec/estrie/sherbrooke/3293746" target="_blank" rel="noopener"
        data-id="https://appartogo.com/en/apartment-rent/canada/quebec/estrie/sherbrooke/3293746" data-titre="4 1/2 À LOUER - 1 MARS 2026" data-ville="sherbrooke-qc"
        data-type="4 1/2" data-site="appartogo"
@@ -712,7 +744,7 @@ footer { text-align: center; color: var(--text-muted); font-size: 0.75em; paddin
           <span class="badge badge-logisquebec">Logisquebec</span>
         </div>
         <div class="type-piece">0.5 km du centre</div>
-        <div class="type-piece">Aussi sur Duproprio</div>
+        <div><button type="button" class="lien-doublon" data-url="https://duproprio.com/fr/location/estrie/sherbrooke-fleurimont/chambre-a-louer/hab-chambre-complexe-du-parc-85-ru-998470">Aussi sur Duproprio</button></div>
       </div>
     </a>
     <a class="carte" href="https://www.logisquebec.com/appartement-a-louer-sherbrooke-l362027" target="_blank" rel="noopener"
@@ -800,7 +832,7 @@ footer { text-align: center; color: var(--text-muted); font-size: 0.75em; paddin
           <span class="badge badge-logisquebec">Logisquebec</span>
         </div>
         <div class="type-piece">0.5 km du centre</div>
-        <div class="type-piece">Aussi sur Kijiji</div>
+        <div><button type="button" class="lien-doublon" data-url="https://www.kijiji.ca/v-apartments-condos/sherbrooke-qc/4-1-2-renove-au-coeur-du-centre-ville-a-proximite-de-tout/1743628543">Aussi sur Kijiji</button></div>
       </div>
     </a>
     <a class="carte" href="https://www.logisquebec.com/appartement-a-louer-les-nations-l360635" target="_blank" rel="noopener"
@@ -844,7 +876,7 @@ footer { text-align: center; color: var(--text-muted); font-size: 0.75em; paddin
           <span class="badge badge-logisquebec">Logisquebec</span>
         </div>
         <div class="type-piece">2.7 km du centre</div>
-        <div class="type-piece">Aussi sur Kijiji</div>
+        <div><button type="button" class="lien-doublon" data-url="https://www.kijiji.ca/v-apartments-condos/sherbrooke-qc/7-1-2-renove-avec-salles-familiales-fleurimont/1743647428">Aussi sur Kijiji</button></div>
       </div>
     </a>
     <a class="carte" href="https://www.lespac.com/sherbrooke/immobilier-location-logements/appartement_226375285D0.jsa?searchCriteria=L3NoZXJicm9va2UvaW1tb2JpbGllci1sb2NhdGlvbi1sb2dlbWVudHNfYjQ1N2cxNzAwMGsxUjIuanNhP25jYz1keDBpMWlyWjAwNmRISjFaUWlzMjBqMA&amp;navigationInfo=YT0wJmI9MzQ3NyZjPTIyNTgwMDQwMVMxMjc0MDYwMDlTMjI1NzU0NjM4UzIyNjI0MzAwMlMyMjI0NzkyNDhTMjI1NzY2NjQwUzIyMjQ3OTI0N1MyMjY0NDE2ODVTMjIwMTk4ODE2UzIyNjQwNzQ0MFMyMjAzODk2MTlTMjIwMzg5NjIwUzIyNjQxMDQwOFMyMjIzODQwMTdTMjI2MDA4MjA1UzIyMzY3OTQzOVMyMjYzODIyMTVTMjIxNDAyMDMyUzIyNjM3NTI4NVMyMjU1ODMwMDImZD0w&amp;requester=SCH" target="_blank" rel="noopener"
@@ -1262,7 +1294,7 @@ footer { text-align: center; color: var(--text-muted); font-size: 0.75em; paddin
           <span class="badge badge-duproprio">Duproprio</span>
         </div>
         <div class="type-piece">0.5 km du centre</div>
-        <div class="type-piece">Aussi sur Kijiji</div>
+        <div><button type="button" class="lien-doublon" data-url="https://www.kijiji.ca/v-apartments-condos/sherbrooke-qc/4-1-2-a-louer-2-bedrooms-for-rent-sherbrooke/1647636855">Aussi sur Kijiji</button></div>
       </div>
     </a>
     <a class="carte" href="https://duproprio.com/fr/location/estrie/sherbrooke-jacques-cartier/5-1-2-a-louer/hab-1140-rue-de-grosvenor-1140449" target="_blank" rel="noopener"
@@ -1482,7 +1514,7 @@ footer { text-align: center; color: var(--text-muted); font-size: 0.75em; paddin
           <span class="badge badge-kijiji">Kijiji</span>
         </div>
         <div class="type-piece">2.4 km du centre</div>
-        <div class="type-piece">Aussi sur Duproprio</div>
+        <div><button type="button" class="lien-doublon" data-url="https://duproprio.com/fr/location/estrie/sherbrooke-jacques-cartier/studio-loft-a-louer/hab-studio-les-jardins-hauterive-2-998294">Aussi sur Duproprio</button></div>
       </div>
     </a>
     <a class="carte" href="https://www.kijiji.ca/v-apartments-condos/sherbrooke-qc/logement-3-1-2-est-de-sherbrooke/1742450932" target="_blank" rel="noopener"
@@ -1856,7 +1888,7 @@ footer { text-align: center; color: var(--text-muted); font-size: 0.75em; paddin
           <span class="badge badge-kijiji">Kijiji</span>
         </div>
         <div class="type-piece">3.4 km du centre</div>
-        <div class="type-piece">Aussi sur Logisquebec</div>
+        <div><button type="button" class="lien-doublon" data-url="https://www.logisquebec.com/appartement-a-louer-mont-bellevue-l359666">Aussi sur Logisquebec</button></div>
       </div>
     </a>
     <a class="carte" href="https://www.kijiji.ca/v-apartments-condos/sherbrooke-qc/5-centre-ville-de-sherbrooke/1743618541" target="_blank" rel="noopener"
@@ -2450,7 +2482,7 @@ footer { text-align: center; color: var(--text-muted); font-size: 0.75em; paddin
           <span class="badge badge-kijiji">Kijiji</span>
         </div>
         <div class="type-piece">1.8 km du centre</div>
-        <div class="type-piece">Aussi sur Logisquebec</div>
+        <div><button type="button" class="lien-doublon" data-url="https://www.logisquebec.com/appartement-a-louer-les-nations-l351928">Aussi sur Logisquebec</button></div>
       </div>
     </a>
     <a class="carte" href="https://appartogo.com/en/apartment-rent/canada/quebec/estrie/sherbrooke/3350022" target="_blank" rel="noopener"
@@ -4367,33 +4399,16 @@ footer { text-align: center; color: var(--text-muted); font-size: 0.75em; paddin
         
       </div>
     </a>
-    <a class="carte" href="https://www.kijiji.ca/v-apartments-condos/sherbrooke-qc/5-tres-beau-grand-eau-chaude-514-770-4513-librteme/1734759235" target="_blank" rel="noopener"
-       data-id="https://www.kijiji.ca/v-apartments-condos/sherbrooke-qc/5-tres-beau-grand-eau-chaude-514-770-4513-librteme/1734759235" data-titre="5½ TRÈS BEAU,GRAND, EAU CHAUDE! 514 770-4513.Librteme" data-ville="sherbrooke-qc"
-       data-type="5 1/2" data-site="kijiji"
-       data-prix="" data-deal="0" data-date="2026-09-15T15:11:30.332487"
-       data-distance="2.69294159733366">
-      <div class="zone-image">
-        <img src="https://media.kijiji.ca/api/v1/ca-prod-dealer-ads/images/a4/a4086827-495f-4a83-8414-6cf4efc9fb18?rule=kijijica-500-webp" loading="lazy" alt="" onerror="this.remove()">
-        
-        <button class="bouton-favori" aria-label="Favori" type="button">&#9825;</button>
-      </div>
-      <div class="corps-carte">
-        <div class="prix-carte">Prix ?</div>
-        <div class="titre-carte">5½ TRÈS BEAU,GRAND, EAU CHAUDE! 514 770-4513.Librteme</div>
-        <div class="meta-carte">
-          <span class="type-piece">5 1/2</span>
-          <span class="type-piece">Sherbrooke</span>
-          <span class="badge badge-kijiji">Kijiji</span>
-        </div>
-        <div class="type-piece">2.7 km du centre</div>
-        
-      </div>
-    </a>
 </div>
 <p id="vide">Aucune annonce ne correspond a ces filtres.</p>
 <footer>Genere automatiquement depuis le PC de Gaby. Les annonces sont publiques (Kijiji, DuProprio, LesPAC, LogisQuebec, Appartogo).</footer>
+<script>const DERNIERE_MAJ_ISO = "2026-09-21T08:48:40.902392"; const FREQUENCE_MINUTES = 60;</script>
 
 <script>
+function normaliser(s) {
+  return s.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
+}
+
 const CLE_STATUTS = "logement_watcher_statuts";
 const CLE_FAVORIS_ANCIEN = "logement_watcher_favoris";
 const CYCLE_STATUT = ["", "favori", "contacte", "pas_interesse"];
@@ -4438,7 +4453,7 @@ function appliquerStatutsAffichage() {
 }
 
 function filtrerEtTrier() {
-  const texte = document.getElementById("recherche").value.trim().toLowerCase();
+  const texte = normaliser(document.getElementById("recherche").value.trim());
   const ville = document.getElementById("filtre-ville").value;
   const type = document.getElementById("filtre-type").value;
   const site = document.getElementById("filtre-site").value;
@@ -4453,7 +4468,7 @@ function filtrerEtTrier() {
     const d = carte.dataset;
     const statut = statuts[d.id] || "";
     let ok = true;
-    if (texte && !d.titre.toLowerCase().includes(texte)) ok = false;
+    if (texte && !normaliser(d.titre).includes(texte)) ok = false;
     if (ville && d.ville !== ville) ok = false;
     if (type && d.type !== type) ok = false;
     if (site && d.site !== site) ok = false;
@@ -4482,6 +4497,13 @@ function filtrerEtTrier() {
 }
 
 document.addEventListener("click", e => {
+  const lienDoublon = e.target.closest(".lien-doublon");
+  if (lienDoublon) {
+    e.preventDefault();
+    window.open(lienDoublon.dataset.url, "_blank", "noopener");
+    return;
+  }
+
   const bouton = e.target.closest(".bouton-favori");
   if (!bouton) return;
   e.preventDefault();
@@ -4522,6 +4544,11 @@ document.getElementById("filtre-tri").addEventListener("change", e => {
 
 appliquerStatutsAffichage();
 filtrerEtTrier();
+
+const minutesEcoulees = (Date.now() - new Date(DERNIERE_MAJ_ISO).getTime()) / 60000;
+if (minutesEcoulees > FREQUENCE_MINUTES * 3) {
+  document.getElementById("banniere-perimee").hidden = false;
+}
 </script>
 
 </body></html>
